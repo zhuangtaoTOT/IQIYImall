@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/registry.css">
+</head>
+
+<body>
+    <div class="main-left">
+        <h3>用科技</h3>
+        <p>让复杂的世界更简单</p>
+    </div>
+
+    <form class="main-right" action="http://localhost/IQIYImall/php/registry.php" method="post">
+
+        <div class="main-right-top">
+            <h3>欢迎注册</h3>
+            <p>已有帐号？
+                <a id="login_btn" href="./login.html">登录</a>
+            </p>
+        </div>
+
+        <p>
+            <label for="" class="formLeft">用户名：</label>
+            <input type="text" name="username" class="username text" placeholder="请设置用户名">
+            <article style="height: 30px; padding-left:85px;"></article>
+        </p>
+        <p>
+            <label for="" class="formLeft">密&emsp;码：</label>
+            <input type="password" name="password" class="text" placeholder="请设置登陆密码">
+            <div style="height: 30px;"></div>
+        </p>
+        <p>
+            <label for="" class="formLeft">确&emsp;认：</label>
+            <input type="password" name="repass" class="text" placeholder="请再次确认密码">
+            <div style="height: 30px;"></div>
+        </p>
+        <p>
+            <label for="" class="formLeft">邮&emsp;箱：</label>
+            <input type="text" name="email" class="text" placeholder="请填写邮箱">
+            <div style="height: 50px;"></div>
+        </p>
+        <p>
+            <input type="submit" value="注&emsp;册" name="submit" class="btn" disabled>
+        </p>
+    </form>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/registry.js"></script>
+</body>
+
+</html>
