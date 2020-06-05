@@ -1,21 +1,15 @@
 @charset "UTF-8";
-*{
-    padding: 0;
-    margin:0;
-}
-a{
-    text-decoration: none;
-}
 .pagelist {
     clear: both;
-    width:1170px;
-    margin:0 auto;
+    width: 1170px;
+    margin: 0 auto;
     text-align: right;
-    padding-right:20px;
+    padding-right: 20px;
 }
+
 .m-style {
     float: right;
-    text-align: center; 
+    text-align: center;
 }
 
 .m-style:before,
@@ -73,7 +67,7 @@ a{
     font-family: "Simsun";
     font-size: 16px;
     font-weight: bold;
-    width:80px;
+    width: 80px;
 }
 
 .now,
@@ -87,7 +81,7 @@ a{
     min-height: 500px;
 }
 
-input {
+.jump-ipt {
     float: left;
     margin: 0 5px;
     width: 38px;

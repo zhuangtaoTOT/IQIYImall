@@ -4,32 +4,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品列表页</title>
-    <link rel="stylesheet" href="css/pagination.css">
-    <link rel="stylesheet" href="css/list.css">
+    <meta name="title" content="豆瓣电影TOP50精彩原著-爱奇艺">
+    <meta name="description" content="必读经典">
+    <title>爱奇艺商城-豆瓣电影TOP50精彩原著</title>
+    <link rel="stylesheet" href="../dist/css/reset.css">
+    <link rel="stylesheet" href="../dist/css/list.css">
 </head>
 
 <body>
-    <!-- <div class="box" style="height:2000px; background:#ccc;width:1190px;margin:0 auto;">
-        在Web应用程序中，系统的瓶颈常在于系统的响应速度。如果系统响应速度过慢，用户就会出现埋怨情绪，系统的价值也因此会大打折扣。因此，提高系统响应速度，是非常重要的。
-        懒加载：懒加载其实就是延时加载，即当对象需要用到的时候再去加载。
-
-        web方面：进入可视区，加载。
-
-    </div> -->
-    <button>默认排序</button>
-    <button>升序排序</button>
-    <button>降序排序</button>
-    <div class="list">
-        <ul>
-
-        </ul>
-    </div>
-    <div class="pagelist">
-        <div class="m-style page">
+    <!-- 顶部 -->
+    <div class="top">
+        <div class="top-conter">
+            <ul class="top-left">
+                <li>欢迎来到爱奇艺商城</li>
+                <li>
+                    <a href="./login.html">请登陆</a>
+                </li>
+                <li>
+                    <a href="./registry.html">免费注册</a>
+                </li>
+            </ul>
+            <div class="top-right">
+                <div class="top-right-wrap">
+                    <a class="top-right-link" href="cart.html">
+                        <span class="gouwuche-icon"></span>购物车<span class="shuliang">0</span>件
+                    </a>
+                </div>
+                <div class="top-right-wrap">
+                    <a class="top-right-link" href="">
+                        <span class="dingdan-icon"></span>我的订单
+                    </a>
+                </div>
+                <div class="top-right-wrap">
+                    <a class="top-right-link" href="">
+                        <span class="shoucang-icon"></span>我的收藏
+                    </a>
+                </div>
+                <div class="shuxian"></div>
+                <div class="top-right-wrap">
+                    <a class="top-right-link" href="">
+                        <span class="guanzhu-icon"></span>关注我们
+                    </a>
+                </div>
+                <div class="shuxian"></div>
+                <div class="top-right-wrap">
+                    <a class="top-right-link" href="">
+                        <span class="zhongxin-icon"></span>商家中心
+                    </a>
+                </div>
+                <div class="shuxian"></div>
+                <div class="top-right-wrap">
+                    <a class="top-right-link" href="">
+                       爱奇艺首页
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- 分页的结构 -->
+
+    <!-- 搜索框 -->
+    <div class="search">
+        <a href="index.html" class="search-img">
+            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/redlogo1126.png" alt="">
+        </a>
+        <div class="search-center">
+            <div class="search-kuang">
+                <form action="">
+                    <input class="search-text" type="text" value="明星同款 正版周边" style="color: rgb(153, 153, 153);">
+                    <input class="search-btn" type="button" value="搜 索">
+                </form>
+            </div>
+            <div class="search-hots">
+                <a href="" class="search-link">漫威</a>
+                <div class="search-shuxian"></div>
+                <a href="">倾城时光</a>
+                <div class="search-shuxian"></div>
+                <a href="" class="search-link">i71定制</a>
+                <div class="search-shuxian"></div>
+                <a href="">火影忍者</a>
+                <div class="search-shuxian"></div>
+                <a href="" class="search-link">熊本熊</a>
+                <div class="search-shuxian"></div>
+                <a href="">延禧攻略</a>
+                <div class="search-shuxian"></div>
+                <a href="" class="search-link">海贼王</a>
+                <div class="search-shuxian"></div>
+                <a href="">潮流合伙人</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航条 -->
+    <div class="nav">
+        <div class="nav-center">
+            <ul class="nav-ul">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="" class="nav-link">秒杀</a></li>
+                <li><a href="" class="nav-link">京东优选</a></li>
+                <li><a href="" class="nav-link">i71</a></li>
+                <li><a href="" class="nav-link">Apple</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- main -->
+    <div class="main">
+
+        <!-- banner -->
+        <div class="banner">
+        </div>
+
+        <!-- 排序按钮 -->
+        <div class="paixubtn">
+            <button class="btn-moren">默认排序</button>
+            <button class="btn-shengxu">升序排序</button>
+            <button class="btn-jiangxu">降序排序</button>
+        </div>
+
+        <!-- 列表 -->
+        <div class="list">
+            <ul class="list-ul">
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="list-li">
+                    <a href="" class="list-link" title="肖申克的救赎 文轩网正版图书">
+                        <div class="list-img">
+                            <img src="http://mall3.iqiyipic.com/mall/20171026/b9/ca/mall_59f1812df6882e60af1fb9ca_1x1.jpg" width="238" height="238" alt="肖申克的救赎 文轩网正版图书">
+                        </div>
+                        <div class="list-text">
+                            <div class="list-title">
+                                肖申克的救赎 文轩网正版图书
+                            </div>
+                            <div class="list-bottom">
+                                <div class="list-num">
+                                    <span class="list-num-b">¥26.2</span>
+                                    <del class="list-num-s">¥26.2</del>
+                                </div>
+                                <span class="list-btn">立即疯抢</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- 分页的结构 -->
+        <div class="pagelist">
+            <div class="m-style page">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer-center">
+            <div class="footer-top">
+                <ul class="footer-top-ul">
+                    <li class="footer-top-li">
+                        <div class="footer-top-icon">
+                            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70">
+                        </div>
+                        <div class="footer-top-text">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+
+                    <li class="footer-top-li">
+                        <div class="footer-top-icon">
+                            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70">
+                        </div>
+                        <div class="footer-top-text">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+                    <li class="footer-top-li">
+                        <div class="footer-top-icon">
+                            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70">
+                        </div>
+                        <div class="footer-top-text">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+                    <li class="footer-top-li">
+                        <div class="footer-top-icon">
+                            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70">
+                        </div>
+                        <div class="footer-top-text">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+                    <li class="footer-top-li">
+                        <div class="footer-top-icon">
+                            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70">
+                        </div>
+                        <div class="footer-top-text">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+                    <li class="footer-top-li">
+                        <div class="footer-top-icon">
+                            <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70">
+                        </div>
+                        <div class="footer-top-text">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-main">
+                <div class="footer-main-wrap">
+                    <span class="footer-main-title">购物指南</span>
+                    <span>购物流程</span>
+                    <span>发票制度</span>
+                    <span>账户管理</span>
+                </div>
+                <div class="footer-main-wrap">
+                    <span class="footer-main-title">购物指南</span>
+                    <span>购物流程</span>
+                    <span>发票制度</span>
+                    <span>账户管理</span>
+                </div>
+                <div class="footer-main-wrap">
+                    <span class="footer-main-title">购物指南</span>
+                    <span>购物流程</span>
+                    <span>发票制度</span>
+                    <span>账户管理</span>
+                </div>
+                <div class="footer-main-wrap">
+                    <span class="footer-main-title">购物指南</span>
+                    <span>购物流程</span>
+                    <span>发票制度</span>
+                    <span>账户管理</span>
+                </div>
+                <div class="footer-main-wrap">
+                    <span class="footer-main-title">购物指南</span>
+                    <span>购物流程</span>
+                    <span>发票制度</span>
+                    <span>账户管理</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrap">
+                    <div class="footer-bottom-img">
+                        <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyi_mall_code.png" alt="爱奇艺商城手机版" width="120" height="120">
+                    </div>
+                    <div class="footer-bottom-text">
+                        <p class="footer-bottom-title">爱奇艺商城手机版</p>
+                        <p>爱奇艺商城-购享娱乐</p>
+                        <p>精彩在手，说有就有</p>
+                        <p>手机购物更方便</p>
+                    </div>
+
+                </div>
+                <div class="footer-bottom-wrap">
+                    <div class="footer-bottom-img">
+                        <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyi_mall_code.png" alt="爱奇艺商城手机版" width="120" height="120">
+                    </div>
+                    <div class="footer-bottom-text">
+                        <p class="footer-bottom-title">爱奇艺商城手机版</p>
+                        <p>爱奇艺商城-购享娱乐</p>
+                        <p>精彩在手，说有就有</p>
+                        <p>手机购物更方便</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-wrap">
+                    <div class="footer-bottom-img">
+                        <img src="http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyi_mall_code.png" alt="爱奇艺商城手机版" width="120" height="120">
+                    </div>
+                    <div class="footer-bottom-text">
+                        <p class="footer-bottom-title">爱奇艺商城手机版</p>
+                        <p>爱奇艺商城-购享娱乐</p>
+                        <p>精彩在手，说有就有</p>
+                        <p>手机购物更方便</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-img">
+        </div>
+    </div>
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="thirdplugins/jquery.lazyload.js"></script>

@@ -1,87 +1,335 @@
-* {
-    padding: 0;
-    margin: 0;
+/*****************************8******顶部*******************************************/
+
+.top {
+    width: 100%;
+    height: 32px;
+    color: #777777;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center
 }
 
-body {
-    background-color: #f4f4f4;
-    font-size: 14px;
-    color: #666;
+.top-conter {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
 }
 
-ul {
-    list-style: none;
+.top-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.header {
-    width: 1190px;
-    height: 200px;
-    background-color: orange;
-    margin: 0 auto 10px;
+.top-left li {
+    margin-right: 30px;
+}
+
+.top-left li a:hover {
+    color: red;
+}
+
+.top-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-right-wrap {
+    font-size: 12px;
+    margin: 0 0 0 20px;
+}
+
+.top-right-link {
+    color: #999;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-right-link span:nth-child(1) {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.shuliang {
+    color: red;
+    font-size: 13px;
+}
+
+.shuxian {
+    margin-left: 20px;
+    height: 8px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.gouwuche-icon {
+    background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenuCar_redicon.png) no-repeat;
+    background-position: 0 0;
+}
+
+.dingdan-icon {
+    background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png) no-repeat;
+    background-position: 0 0;
+}
+
+.shoucang-icon {
+    background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png) no-repeat;
+    background-position: -110px 0;
+}
+
+.guanzhu-icon {
+    background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png) no-repeat;
+    background-position: -40px 0;
+}
+
+.zhongxin-icon {
+    background: url(http://www.iqiyipic.com/common/fix/h5_qiyiShop_img/topMenu_redicon.png) no-repeat;
+    background-position: -60px 0;
+}
+
+.top-right-link:hover {
+    color: red;
+}
+
+.top-right-link:hover .gouwuche-icon {
+    background-position: 0 -20px;
+}
+
+.top-right-link:hover .dingdan-icon {
+    background-position: 0 -20px;
+}
+
+.top-right-link:hover .shoucang-icon {
+    background-position: -110px -20px;
+}
+
+.top-right-link:hover .guanzhu-icon {
+    background-position: -40px -20px;
+}
+
+.top-right-link:hover .zhongxin-icon {
+    background-position: -60px -20px;
+}
+
+.search {
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.search-img {
+    margin-right: 154px;
+    float: left;
+}
+
+.search-center {
+    padding-top: 10px;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-kuang {
+    border: 1px solid #ee394b;
+    height: 34px;
+}
+
+.search-text {
+    width: 396px;
+    border: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #999;
+    line-height: 14px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search-btn {
+    width: 100px;
+    color: #fff;
+    border: 0;
+    background: #eb3b4a;
+    font-size: 20px;
+    height: 34px;
+    float: right;
+    cursor: pointer;
+}
+
+.search-hots {
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    padding-top: 10px;
+    color: #c7c7c7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-hots>a {
+    color: #777;
+}
+
+.search-hots .search-link {
+    color: red;
+}
+
+.search-hots>a:hover {
+    color: red;
+}
+
+.search-shuxian {
+    height: 8px;
+    border-left: 1px solid #e5e5e5;
 }
 
 .nav {
+    height: 40px;
+    background: #ee394b;
+}
+
+.nav-center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: left;
+}
+
+.nav-ul>li {
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link {
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 25px;
+}
+
+.nav-ul>li:hover {
+    border-bottom: 3px solid #cc0e2b;
+}
+
+
+/****************************************main*********************/
+
+
+/**************************************************底部*****************************************************************/
+
+.footer {
     width: 100%;
-    height: 60px;
-    background-color: #abcdef;
-}
-
-.banner {
-    width: 1190px;
-    margin: 0px auto;
-}
-
-.menu {
-    position: relative;
-    z-index: 3;
-}
-
-.menu ul {
+    border-top: 1px solid #e5e5e5;
+    background: #fafafa;
+    border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
-    padding: 10px 0;
-    height: 450px;
-    background-color: #fefefe;
-    color: #636363;
-    margin-top: 10px;
-    width: 190px;
 }
 
-.menu ul li {
-    height: 25px;
-    line-height: 25px;
-    padding-left: 18px;
+.footer-center {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.menu ul li.active {
-    background-color: #d9d9d9;
+.footer-top {
+    padding: 30px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.menu li a {
-    font-size: 14px;
+.footer-top-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-top-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top-text>p {
+    color: #777;
+    margin: 10px;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-main-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.footer-main-wrap>span {
     color: #333;
-    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 6px;
+    display: block;
 }
 
-.menu li span {
-    padding: 0 2px;
-    font-size: 12px;
+.footer-main-wrap .footer-main-title {
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    display: block;
 }
 
-.cartlist {
-    position: absolute;
-    left: 191px;
-    top: 0;
-    width: 998px;
-    min-height: 468px;
-    border: 1px solid #f7f7f7;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
-    display: none;
-    transition: top 0.3s ease;
-
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.item {
-    padding: 20px;
-    display: none;
+.footer-bottom-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.footer-bottom-img {
+    width: 120px;
+    height: 100%;
+}
+
+.footer-bottom-text {
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.footer-bottom-title {
+    color: #333;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.bottom {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.bottom-img {
+    height: 230px;
+    background: url(../img/123.png) no-repeat;
+    background-position: center top;
+    background-size: contain;
 }
