@@ -1,4 +1,4 @@
-/*****************************8******顶部*******************************************/
+/***********************顶部******************************/
 
 .top {
     width: 100%;
@@ -115,6 +115,12 @@
     background-position: -60px -20px;
 }
 
+
+/******************** 伸缩图 **********************/
+
+
+/****************** 搜索框 ***********************/
+
 .search {
     width: 1200px;
     margin: 30px auto;
@@ -221,10 +227,72 @@
 }
 
 
-/****************************************main*********************/
+/*******************main*********************/
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-a {
+    margin: 50px 0;
+}
+
+.jingxuan {
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.main-iocn {
+    width: 36px;
+    height: 36px;
+    background: url(http://pic5.iqiyipic.com/common/20160907/ae2dd09618d545a595cc8c97be29a45d.png);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+}
+
+.main-btext {
+    line-height: 36px;
+    margin: 0 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.main-shuxian {
+    margin-bottom: 7px;
+    border-left: 1px solid #c2c2c2;
+    width: 1px;
+    height: 10px;
+}
+
+.main-stext {
+    margin-bottom: 4px;
+    line-height: 16px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #c2c2c2;
+}
+
+.jingxuan-gongduo {
+    font-size: 14px;
+    color: #666;
+    line-height: 50px;
+    padding-right: 10px;
+}
 
 
-/**************************************************底部*****************************************************************/
+/*******************底部**********************/
 
 .footer {
     width: 100%;
